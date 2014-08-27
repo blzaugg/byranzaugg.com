@@ -1,6 +1,6 @@
 name: Byran Zaugg
 markdown: redcarpet
-baseurl: "http://blzaugg.github.io/kovalcin"
+baseurl: "http://www.byranzaugg.com"
 exclude: [
   .git,
   .gitignore,
