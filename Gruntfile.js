@@ -18,12 +18,12 @@ module.exports = function(grunt) {
       }
     },
 
-    autoprefixer: {
-      global: {
-        src: "css/global-unprefixed.css",
-        dest: "css/global.css"
-      }
-    },
+    // autoprefixer: {
+    //   global: {
+    //     src: "css/global-unprefixed.css",
+    //     dest: "css/global.css"
+    //   }
+    // },
 
     shell: {
       jekyllServe: {
@@ -39,31 +39,23 @@ module.exports = function(grunt) {
         livereload: true
       },
       site: {
-        files: ["index.html", "_layouts/*.html", "_posts/*.md", "_projects/*.md", "_includes/*.html"],
+        files: [
+          "*.md",
+          "*.html",
+          "*/*.md",
+          "*/*.html",
+          "_layouts/*.html",
+          "_includes/*.html"
+        ],
         tasks: ["shell:jekyllBuild"]
       },
       css: {
         files: ["scss/*.scss"],
-        tasks: ["sass", "autoprefixer", "shell:jekyllBuild"]
-      },
-      svg: {
-        files: ["svg/*.svg"],
-        tasks: ["svgstore", "shell:jekyllBuild"]
-      }
-    },
-
-    svgstore: {
-      options: {
-        prefix : "shape-",
-        cleanup: false,
-        svg: {
-          style: "display: none;"
-        }
-      },
-      default: {
-        files: {
-          "_includes/svg-defs.svg": ["svg/*.svg"]
-        }
+        tasks: [
+          "sass",
+          // "autoprefixer",
+          "shell:jekyllBuild"
+        ]
       }
     }
 
@@ -72,6 +64,13 @@ module.exports = function(grunt) {
   require("load-grunt-tasks")(grunt);
 
   grunt.registerTask("serve", ["shell:jekyllServe"]);
-  grunt.registerTask("default", ["sass", "autoprefixer", "svgstore", "shell:jekyllBuild", "watch"]);
-
+  grunt.registerTask(
+    "default",
+    [
+      "sass",
+      // "autoprefixer",
+      "shell:jekyllBuild",
+      "watch"
+    ]
+  );
 };

@@ -1,0 +1,1086 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+	<title>[NEEDS PAGE TITLE] - Gano Excel : Back Office</title>
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta name="format-detection" content="telephone=no">
+	<link href="styles/content_screen.css" type="text/css" rel="stylesheet">
+	<link href="styles/content_print.css" type="text/css" rel="stylesheet" media="print">
+	<!--[if lte IE 7]>
+	<link href="styles/content_screen_ie7_lte.css" type="text/css" rel="stylesheet" />
+	<![endif]-->
+	<script type="text/javascript" language="javascript" src="scripts/p3_ajaxframework.js"></script>
+	<link href="styles/shell.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="styles/shell_print.css" type="text/css" rel="stylesheet" media="print">
+	<script type="text/javascript">
+
+		var iSessionTimeoutAlert = 3300000;
+		var iSessionLogout = 3540000;
+		var sSessionTimeoutMessage = 'Your session is about to expire and you will be logged out automatically. If you would like to continue your session, click OK.\nOtherwise, click Cancel to logout.';
+	</script>
+	<script type="text/javascript" src="scripts/sesson-timeout.js"></script>
+	<style type="text/css" media="screen">
+		/*If it will/can be used elsewhere, link to an external CSS file.*//*Local page CSS code below this line.*/
+	</style>
+	<script type="text/javascript" language="javascript">
+	<!--
+		//If it will/can be used elsewhere, link to an external JavaScript file.
+		//Local page JavaScript code below this line.
+	//-->
+	</script>
+	<script type="text/javascript" language="javascript" src="scripts/mootools-1.2.4-core-yc.js"></script>
+	<script type="text/javascript" language="javascript" src="scripts/zebratables.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/zebratables-rows.css" media="screen">
+</head>
+<body>
+	<div id="PageWrapper">
+		<div id="PageHeader">
+			<div id="AccountNav">
+				<ul>
+					<li class="UserName">Kurt Burgenmeyer (8091456)</li>
+					<li>
+						<script type="text/javascript" language="javascript" src="scripts/language.js"></script>
+						<select id="selLanguageSelector" onchange="javascript:languageDDLSelection(1051407);">
+							<option value="-1">Idioma</option>
+							<option selected="selected" value="1051407">English</option>
+							<option value="1191601">Espaol</option>
+						</select>
+					</li>
+					<li class="last_li"><a href="/logout.asp">Log Out</a></li>
+				</ul>
+			</div>
+			<div id="ClientNameLogo" title="Gano Excel North America">
+				Gano Excel North America</div>
+			<div id="PrimaryNav">
+				<ul>
+					<li><a href="/home/home.asp">Home</a></li>
+					<li><a href="/corporate/member_newsevents/news_announcements.asp" class="selected">Corporate</a></li>
+					<li><a href="/memberinfo/membership/distributor_status.asp">Member Info</a></li>
+					<li><a href="/mywebsite/sitenavigator/managewebsite.asp">My Website</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--PageHeader-->
+		<div id="PageBody">
+			<div id="SectionHeader">
+				<h5>
+					Corporate<span> - Distributor-specific insight on news, events and general corporate information.</span></h5>
+			</div>
+			<!--CSS 2.1 "columns" are not flexable & reliable enough. Tables columns are.-->
+			<table id="PageBody_Columns" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td id="PageBody_ColumnLeft">
+						<div id="SecondaryNav">
+							<ul>
+								<li>What`s Happening<ul>
+									<li><a href="/corporate/member_newsevents/news_announcements.asp">News/Announcements</a></li>
+									<li class="selected"><a href="/corporate/eventcalendar/eventcalendar.asp">Events Calendar</a></li>
+									<li><a href="/corporate/member_newsevents/news_notifications.asp">Corporate Notifications History</a></li>
+								</ul>
+								</li>
+								<li>Resources<ul>
+									<li><a href="/corporate/policies/policies.asp">Policies and Procedures</a></li>
+									<li><a href="/corporate/faqs/faqs.asp">Common Questions (FAQ)</a></li>
+									<li><a href="/corporate/business_forms/biz_forms.asp">Applications/Forms</a></li>
+									<li><a href="/corporate/presentations/presentations.asp">Presentations</a></li>
+									<li><a href="/corporate/businesskit/affiliate_ekit.asp">Electronic Business Kit</a></li>
+									<li><a href="/corporate/collateral/posters/design_tools.asp">Design Tools</a></li>
+								</ul>
+								</li>
+								<li>Contacts<ul>
+									<li><a href="/corporate/cc_directory/corporate_contact_list.asp">Corporate Contact Directory</a></li>
+									<li><a href="/corporate/pv_list/preferred_vendor_list.asp">Preferred Vendors List</a></li>
+								</ul>
+								</li>
+							</ul>
+						</div>
+						<img class="FauxMinWidth" height="20" src="images/spacer.gif" alt="">
+					</td>
+					<!--PageBody_ColumnLeft-->
+					<td id="PageBody_ColumnRight">
+						<div id="JumpLinks">
+							<h6>
+								Jump<span>Links...</span></h6>
+							<ul>
+								<li><a href="/memberinfo/ordering/order_placement.asp" style="background-image: url('images/shell_jumplinks_icon_ordering.gif');" title="Place a new order.">Ordering</a></li>
+								<li><a href="/memberinfo/autoship/autoship_profile.asp" style="background-image: url('images/shell_jumplinks_icon_autoship.gif');" title="Manage your autoship profile.">Autoship</a></li>
+								<li><a href="/memberinfo/downline_volumes/downlines/downline_binaryfourlevel.asp" style="background-image: url('images/shell_jumplinks_icon_downline.gif');" title="View your downline.">Downline</a></li>
+								<li><a href="/memberinfo/websignup/dportal/process/start.asp" style="background-image: url('images/shell_jumplinks_icon_enroll.gif');" title="Enroll a new distributor.">Enroll</a></li>
+								<li><a href="/memberinfo/commission/commissionhistory.asp" style="background-image: url('images/shell_jumplinks_icon_commisions.gif');" title="View your compensation history">Commissions</a></li>
+							</ul>
+						</div>
+						<div id="Content">
+							<h1>
+								<span>[NEEDS PAGE TITLE]</span></h1>
+							<!--############################################-->
+							<h2>
+								Qualification Details</h2>
+							<p class="H2SubHeading">
+								Period: 06/07/2010 - 06/13/2010 <i>(Cycle #79)</i></p>
+							<div class="ContentGroup">
+								<h3>
+									.ContentGroup h3</h3>
+								<div class="DataGrid TableMargins">
+									<table cellpadding="0" cellspacing="0">
+										<tr>
+											<th style="width: 175px;">
+												Affiliate:
+											</th>
+											<td>
+												Tony Potter (#8091456)
+											</td>
+										</tr>
+										<tr>
+											<th>
+												Country of Origin:
+											</th>
+											<td>
+												United States
+											</td>
+										</tr>
+										<tr>
+											<th>
+												Qualified Paid Rank:
+											</th>
+											<td>
+												Gold
+											</td>
+										</tr>
+										<tr class="Last">
+											<th>
+												Title Rank:
+											</th>
+											<td>
+												Diamond
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="ContentGroup">
+								<div class="DataGrid TableMargins">
+									<table cellpadding="0" cellspacing="0">
+										<tr>
+											<th style="width: 30%;">
+												Affiliate:
+											</th>
+											<td style="width: 20%;">
+												Tony Potter (#8091456)
+											</td>
+											<th style="width: 30%;" class="Divider">
+												Title Rank:
+											</th>
+											<td style="width: 20%;">
+												Diamond
+											</td>
+										</tr>
+										<tr>
+											<th>
+												Country of Origin:
+											</th>
+											<td>
+												United States
+											</td>
+											<th>
+												Affiliate:
+											</th>
+											<td>
+												Tony Potter
+											</td>
+										</tr>
+										<tr>
+											<th>
+												Qualified Paid Rank:
+											</th>
+											<td>
+												Gold
+											</td>
+											<th>
+												Country of Origin:
+											</th>
+											<td>
+												United States
+											</td>
+										</tr>
+										<tr class="Last">
+											<th>
+												Title Rank:
+											</th>
+											<td>
+												Diamond
+											</td>
+											<th>
+												Qualified Paid Rank:
+											</th>
+											<td>
+												Gold
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="TabbedTable TableMargins">
+								<table cellpadding="0" cellspacing="0" class="TabbedTableTabs">
+									<tr>
+										<td valign="bottom" class="First Selected">
+											<div class="bg-left">
+												<div class="bg-right">
+													<div>
+														Personal Volume</div>
+													<div>
+														<b>105 PV</b></div>
+												</div>
+											</div>
+										</td>
+										<td class="Cap">
+										</td>
+									</tr>
+								</table>
+								<table cellpadding="0" cellspacing="0" class="Data zebra">
+									<tr class="TabbedHeaders zt-odd">
+										<th align="left" class="First">
+											Order #
+										</th>
+										<th align="left">
+											Country<br>
+											Country
+										</th>
+										<th align="left">
+											<a href="#">Purchaser
+												<img src="images/sort-desc.png" alt="" class="sortIcon"></a>
+										</th>
+										<th align="center">
+											Date
+										</th>
+										<th align="right" class="Last">
+											PV Total
+										</th>
+									</tr>
+									<tr class="zt-even">
+										<td align="left" class="First">
+											<a href="#">12345</a>
+										</td>
+										<td align="left">
+											USA
+										</td>
+										<td align="left">
+											You
+										</td>
+										<td align="center">
+											5/15/2010
+										</td>
+										<td align="right" class="Last">
+											50
+										</td>
+									</tr>
+									<tr class="zt-odd">
+										<td align="left" class="First">
+											<a href="#">12345</a>
+										</td>
+										<td align="left">
+											CAN
+										</td>
+										<td align="left">
+											Bob Schmidt (#108091457)
+										</td>
+										<td align="center">
+											5/20/2010
+										</td>
+										<td align="right" class="Last">
+											55
+										</td>
+									</tr>
+									<tr class="zt-even">
+										<td align="left" class="First">
+											<a href="#">12345</a>
+										</td>
+										<td align="left">
+											CAN
+										</td>
+										<td align="left">
+											Bob Schmidt (#108091457)
+										</td>
+										<td align="center">
+											5/20/2010
+										</td>
+										<td align="right" class="Last">
+											55
+										</td>
+									</tr>
+									<tr class="zt-odd">
+										<td align="left" class="First">
+											<a href="#">12345</a>
+										</td>
+										<td align="left">
+											CAN
+										</td>
+										<td align="left">
+											Bob Schmidt (#108091457)
+										</td>
+										<td align="center">
+											5/20/2010
+										</td>
+										<td align="right" class="Last">
+											55
+										</td>
+									</tr>
+									<tr class="zt-even">
+										<td align="left" class="First">
+											<a href="#">12345</a>
+										</td>
+										<td align="left">
+											CAN
+										</td>
+										<td align="left">
+											Bob Schmidt (#108091457)
+										</td>
+										<td align="center">
+											5/20/2010
+										</td>
+										<td align="right" class="Last">
+											55
+										</td>
+									</tr>
+									<tr class="zt-odd">
+										<td align="left" class="First">
+											<a href="#">12345</a>
+										</td>
+										<td align="left">
+											CAN
+										</td>
+										<td align="left">
+											Bob Schmidt (#108091457)
+										</td>
+										<td align="center">
+											5/20/2010
+										</td>
+										<td align="right" class="Last">
+											55
+										</td>
+									</tr>
+									<tr class="NoHover zt-even">
+										<td colspan="4">
+											&nbsp;
+										</td>
+										<td align="right" class="Last">
+											<b>105</b>
+										</td>
+									</tr>
+								</table>
+								<table cellpadding="0" cellspacing="0" class="Footer">
+									<tr>
+										<td>
+											Footer
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div class="TabbedTable TableMargins">
+								<table cellpadding="0" cellspacing="0" class="TabbedTableTabs">
+									<tr>
+										<td valign="bottom" class="First Selected">
+											<div class="bg-left">
+												<div class="bg-right">
+													<div>
+														Personal Enrollments (Active)</div>
+													<div>
+														<b>1<i>(left)</i> <i>/</i> 2<i>(right)</i></b></div>
+												</div>
+											</div>
+										</td>
+										<td valign="bottom" class="Last">
+											<div class="bg-left">
+												<div class="bg-right">
+													<div>
+														<a href="#">Inactive<br>
+															Personal Enrollments</a></div>
+												</div>
+											</div>
+										</td>
+										<td class="Cap">
+										</td>
+									</tr>
+								</table>
+								<table cellpadding="0" cellspacing="0" class="Data">
+									<tr class="TabbedHeaders NoHover">
+										<th align="center" class="First">
+											Left <span class="Note">(Binary Placement)</span>
+										</th>
+										<th align="center" class="Last">
+											Right <span class="Note">(Binary Placement)</span>
+										</th>
+									</tr>
+									<tr class="NoHover">
+										<td valign="top" align="left" class="First SubTableColumn">
+											<table cellpadding="0" cellspacing="0" class="Data zebra">
+												<tr class="NoHover zt-odd">
+													<th align="left" class="First">
+														ID
+													</th>
+													<th align="left">
+														Name
+													</th>
+													<th align="right" class="Last">
+														PV
+													</th>
+												</tr>
+												<tr class="zt-even">
+													<td align="left" class="First">
+														<a href="#"></a><a href="#">12345</a>
+													</td>
+													<td align="left">
+														USA
+													</td>
+													<td align="right" class="Last">
+														50
+													</td>
+												</tr>
+												<tr class="zt-odd">
+													<td align="left" class="First">
+														<a href="#">12345</a>
+													</td>
+													<td align="left">
+														CAN
+													</td>
+													<td align="right" class="Last">
+														55
+													</td>
+												</tr>
+												<tr class="zt-even">
+													<td align="left" class="First">
+														<a href="#">12345</a>
+													</td>
+													<td align="left">
+														USA
+													</td>
+													<td align="right" class="Last">
+														50
+													</td>
+												</tr>
+												<tr class="zt-odd">
+													<td align="left" class="First">
+														<a href="#"></a><a href="#">12345</a>
+													</td>
+													<td align="left">
+														USA
+													</td>
+													<td align="right" class="Last">
+														50
+													</td>
+												</tr>
+												<tr class="zt-even">
+													<td align="left" class="First">
+														<a href="#">12345</a>
+													</td>
+													<td align="left">
+														CAN
+													</td>
+													<td align="right" class="Last">
+														55
+													</td>
+												</tr>
+												<tr class="zt-odd">
+													<td align="left" class="First">
+														<a href="#">12345</a>
+													</td>
+													<td align="left">
+														USA
+													</td>
+													<td align="right" class="Last">
+														50
+													</td>
+												</tr>
+												<tr class="zt-even">
+													<td align="left" class="First">
+														<a href="#"></a><a href="#">12345</a>
+													</td>
+													<td align="left">
+														USA
+													</td>
+													<td align="right" class="Last">
+														50
+													</td>
+												</tr>
+												<tr class="zt-odd">
+													<td align="left" class="First">
+														<a href="#">12345</a>
+													</td>
+													<td align="left">
+														CAN
+													</td>
+													<td align="right" class="Last">
+														55
+													</td>
+												</tr>
+												<tr class="zt-even">
+													<td align="left" class="First">
+														<a href="#">12345</a>
+													</td>
+													<td align="left">
+														USA
+													</td>
+													<td align="right" class="Last">
+														50
+													</td>
+												</tr>
+												<tr class="zt-odd">
+													<td align="left" class="First">
+														<a href="#"></a><a href="#">12345</a>
+													</td>
+													<td align="left">
+														USA
+													</td>
+													<td align="right" class="Last">
+														50
+													</td>
+												</tr>
+												<tr class="zt-even">
+													<td align="left" class="First">
+														<a href="#">12345</a>
+													</td>
+													<td align="left">
+														CAN
+													</td>
+													<td align="right" class="Last">
+														55
+													</td>
+												</tr>
+												<tr class="zt-odd">
+													<td align="left" class="First">
+														<a href="#">12345</a>
+													</td>
+													<td align="left">
+														USA
+													</td>
+													<td align="right" class="Last">
+														50
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td valign="top" align="left" class="Last SubTableColumn">
+											<table cellpadding="0" cellspacing="0" class="Data zebra">
+												<tr class="NoHover zt-even">
+													<th align="left" class="First">
+														ID
+													</th>
+													<th align="left">
+														Name
+													</th>
+													<th align="right" class="Last">
+														PV
+													</th>
+												</tr>
+												<tr class="zt-odd">
+													<td align="left" class="First">
+														<a href="#">12345</a>
+													</td>
+													<td align="left">
+														USA
+													</td>
+													<td align="right" class="Last">
+														50
+													</td>
+												</tr>
+												<tr class="zt-even">
+													<td align="left" class="First">
+														<a href="#">12345</a>
+													</td>
+													<td align="left">
+														CAN
+													</td>
+													<td align="right" class="Last">
+														55
+													</td>
+												</tr>
+												<tr class="zt-odd">
+													<td align="left" class="First">
+														<a href="#">12345</a>
+													</td>
+													<td align="left">
+														USA
+													</td>
+													<td align="right" class="Last">
+														50
+													</td>
+												</tr>
+												<tr class="zt-even">
+													<td align="left" class="First">
+														<a href="#">12345</a>
+													</td>
+													<td align="left">
+														CAN
+													</td>
+													<td align="right" class="Last">
+														55
+													</td>
+												</tr>
+												<tr class="zt-odd">
+													<td align="left" class="First">
+														<a href="#">12345</a>
+													</td>
+													<td align="left">
+														USA
+													</td>
+													<td align="right" class="Last">
+														50
+													</td>
+												</tr>
+												<tr class="zt-even">
+													<td align="left" class="First">
+														<a href="#">12345</a>
+													</td>
+													<td align="left">
+														CAN
+													</td>
+													<td align="right" class="Last">
+														55
+													</td>
+												</tr>
+												<tr class="zt-odd">
+													<td align="left" class="First">
+														<a href="#">12345</a>
+													</td>
+													<td align="left">
+														USA
+													</td>
+													<td align="right" class="Last">
+														50
+													</td>
+												</tr>
+												<tr class="zt-even">
+													<td align="left" class="First">
+														<a href="#">12345</a>
+													</td>
+													<td align="left">
+														CAN
+													</td>
+													<td align="right" class="Last">
+														55
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<table cellpadding="0" cellspacing="0" class="Footer">
+									<tr>
+										<td>
+											Footer
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div class="TabbedTable TableMargins">
+								<table cellpadding="0" cellspacing="0" class="TabbedTableTabs">
+									<tr>
+										<td valign="bottom" class="First">
+											<div class="bg-left">
+												<div class="bg-right">
+													<div>
+														Personal Volume</div>
+													<div>
+														<b>105 PV</b></div>
+												</div>
+											</div>
+										</td>
+										<td valign="bottom" class=" Selected">
+											<div class="bg-left">
+												<div class="bg-right">
+													<div>
+														Personal Volume Volume</div>
+													<div>
+														<b>105 PV</b></div>
+												</div>
+											</div>
+										</td>
+										<td valign="bottom" class="">
+											<div class="bg-left">
+												<div class="bg-right">
+													<div>
+														<a href="#">Personal<br>
+															Volume</a></div>
+													<div>
+														<b>105 PV</b></div>
+												</div>
+											</div>
+										</td>
+										<td valign="bottom" class="Last">
+											<div class="bg-left">
+												<div class="bg-right">
+													<div>
+														<a href="#">Volume</a></div>
+													<div>
+														<b>105 PV</b></div>
+												</div>
+											</div>
+										</td>
+										<td class="Cap">
+										</td>
+									</tr>
+								</table>
+								<table cellpadding="0" cellspacing="0" class="Data zebra">
+									<tr class="TabbedHeaders NoHover zt-odd">
+										<th align="left" class="First">
+											Order #
+										</th>
+										<th align="left">
+											Country<br>
+											Country
+										</th>
+										<th align="left">
+											<a href="#">Purchaser
+												<img src="images/sort-asc.png" alt="" class="sortIcon"></a>
+										</th>
+										<th align="center">
+											Date
+										</th>
+										<th align="right" class="Last">
+											PV Total
+										</th>
+									</tr>
+									<tr class="zt-even">
+										<td align="left" class="First">
+											<a href="#">12345</a>
+										</td>
+										<td align="left">
+											USA
+										</td>
+										<td align="left">
+											You
+										</td>
+										<td align="center">
+											5/15/2010
+										</td>
+										<td align="right" class="Last">
+											50
+										</td>
+									</tr>
+									<tr class="zt-odd">
+										<td align="left" class="First">
+											<a href="#">12345</a>
+										</td>
+										<td align="left">
+											CAN
+										</td>
+										<td align="left">
+											Bob Schmidt (#108091457)
+										</td>
+										<td align="center">
+											5/20/2010
+										</td>
+										<td align="right" class="Last">
+											55
+										</td>
+									</tr>
+									<tr class="NoHover zt-even">
+										<td colspan="4">
+											&nbsp;
+										</td>
+										<td align="right" class="Last">
+											<b>105</b>
+										</td>
+									</tr>
+								</table>
+								<table cellpadding="0" cellspacing="0" class="Footer">
+									<tr>
+										<td>
+											Footer
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div class="TableMargins">
+								<table cellpadding="0" cellspacing="0" class="Data zebra">
+									<tr class="NoHover zt-odd">
+										<th align="left" class="First">
+											Order #
+										</th>
+										<th align="left">
+											Country<br>
+											Country
+										</th>
+										<th align="left">
+											<a href="#">Purchaser
+												<img src="images/sort-desc.png" alt="" class="sortIcon"></a>
+										</th>
+										<th align="center">
+											Date
+										</th>
+										<th align="right" class="Last">
+											PV Total
+										</th>
+									</tr>
+									<tr class="zt-even">
+										<td align="left" class="First">
+											<a href="#">12345</a>
+										</td>
+										<td align="left">
+											USA
+										</td>
+										<td align="left">
+											You
+										</td>
+										<td align="center">
+											5/15/2010
+										</td>
+										<td align="right" class="Last">
+											50
+										</td>
+									</tr>
+									<tr class="zt-odd">
+										<td align="left" class="First">
+											<a href="#">12345</a>
+										</td>
+										<td align="left">
+											CAN
+										</td>
+										<td align="left">
+											Bob Schmidt (#108091457)
+										</td>
+										<td align="center">
+											5/20/2010
+										</td>
+										<td align="right" class="Last">
+											55
+										</td>
+									</tr>
+									<tr class="zt-even">
+										<td align="left" class="First">
+											<a href="#">12345</a>
+										</td>
+										<td align="left">
+											USA
+										</td>
+										<td align="left">
+											You
+										</td>
+										<td align="center">
+											5/15/2010
+										</td>
+										<td align="right" class="Last">
+											50
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div class="TableMargins">
+								<table cellpadding="0" cellspacing="0" class="Data">
+									<tr class="NoHover">
+										<th align="left" class="First">
+											Order #
+										</th>
+										<th align="left">
+											Country<br>
+											Country
+										</th>
+										<th align="left">
+											<a href="#">Purchaser
+												<img src="images/sort-desc.png" alt="" class="sortIcon"></a>
+										</th>
+										<th align="center">
+											Date
+										</th>
+										<th align="right" class="Last">
+											PV Total
+										</th>
+									</tr>
+									<tr>
+										<td align="left" class="First">
+											<a href="#">12345</a>
+										</td>
+										<td align="left" class="ColumnHighlight">
+											USA
+										</td>
+										<td align="left">
+											You
+										</td>
+										<td align="center" class="ColumnHighlight">
+											5/15/2010
+										</td>
+										<td align="right" class="Last">
+											50
+										</td>
+									</tr>
+									<tr>
+										<td align="left" class="First">
+											<a href="#">12345</a>
+										</td>
+										<td align="left" class="ColumnHighlight">
+											CAN
+										</td>
+										<td align="left">
+											Bob Schmidt (#108091457)
+										</td>
+										<td align="center" class="ColumnHighlight">
+											5/20/2010
+										</td>
+										<td align="right" class="Last">
+											55
+										</td>
+									</tr>
+									<tr>
+										<td align="left" class="First">
+											<a href="#">12345</a>
+										</td>
+										<td align="left" class="ColumnHighlight">
+											USA
+										</td>
+										<td align="left">
+											You
+										</td>
+										<td align="center" class="ColumnHighlight">
+											5/15/2010
+										</td>
+										<td align="right" class="Last">
+											50
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div class="TableMargins">
+								<table cellpadding="0" cellspacing="0" class="Data zebra">
+									<tr class="NoHover zt-odd">
+										<th align="left" class="First">
+											Order #
+										</th>
+										<th align="left">
+											Country<br>
+											Country
+										</th>
+										<th align="left">
+											<a href="#">Purchaser
+												<img src="images/sort-desc.png" alt="" class="sortIcon"></a>
+										</th>
+										<th align="center">
+											Date
+										</th>
+										<th align="right" class="Last">
+											PV Total
+										</th>
+									</tr>
+									<tr class="NoHover zt-even">
+										<td align="left" class="First">
+											<a href="#">12345</a>
+										</td>
+										<td align="left">
+											USA
+										</td>
+										<td align="left">
+											You
+										</td>
+										<td align="center">
+											5/15/2010
+										</td>
+										<td align="right" class="Last">
+											50
+										</td>
+									</tr>
+									<tr class="NoHover zt-odd">
+										<td align="left" class="First">
+											<a href="#">12345</a>
+										</td>
+										<td align="left">
+											CAN
+										</td>
+										<td align="left">
+											Bob Schmidt (#108091457)
+										</td>
+										<td align="center">
+											5/20/2010
+										</td>
+										<td align="right" class="Last">
+											55
+										</td>
+									</tr>
+									<tr class="NoHover zt-even">
+										<td align="left" class="First">
+											<a href="#">12345</a>
+										</td>
+										<td align="left">
+											USA
+										</td>
+										<td align="left">
+											You
+										</td>
+										<td align="center">
+											5/15/2010
+										</td>
+										<td align="right" class="Last">
+											50
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div class="ContentGroup Yellow" style="float: left;">
+								<h3>
+									Consecutive Pay Volume <i>(Binary)</i></h3>
+								<div class="ConsecutivePayVolume TableMargins">
+									<table cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<th valign="bottom" class="First">
+												<div class="Date">
+													06/07/2010 - 06/13/2010</div>
+												<div class="Cycle">
+													Cycle #79 (Current Cycle)</div>
+											</th>
+											<th valign="bottom">
+												<div class="Date">
+													05/31/2010 - 06/06/2010</div>
+												<div class="Cycle">
+													Cycle #78</div>
+											</th>
+											<th valign="bottom">
+												<div class="Date">
+													05/23/2010 - 05/30/2010</div>
+												<div class="Cycle">
+													Cycle #77</div>
+											</th>
+											<th valign="bottom">
+												<div class="Date">
+													05/15/2010 - 05/22/2010
+												</div>
+												<div class="Cycle">
+													Cycle #76</div>
+											</th>
+										</tr>
+										<tr>
+											<td class="First">
+												<span>13,200</span>
+											</td>
+											<td>
+												<span>8,000</span>
+											</td>
+											<td>
+												<span>7,600</span>
+											</td>
+											<td>
+												<span>8,000</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!--############################################-->
+						</div>
+						<!--Content-->
+					</td>
+					<!--PageBody_ColumnRight-->
+				</tr>
+			</table>
+		</div>
+		<!--PageBody-->
+		<div id="PageFooter">
+			<div id="FooterNav">
+				<ul>
+					<li class="last_li">© 2008-2011&nbsp;Gano Excel North America </li>
+				</ul>
+			</div>
+		</div>
+		<!--PageFooter-->
+	</div>
+	<!--PageWrapper-->
+</body>
+</html>

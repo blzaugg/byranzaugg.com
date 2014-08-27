@@ -1,0 +1,17 @@
+
+/* ----- ZEBRA STRIPING ----- */
+.zt-highlight {
+	background:#e0e0e0;
+}
+.zt-even {
+	/*background:#ffffff; */
+}
+.zt-odd {
+	background:#F5F5F5; 
+}
+.zt-mo  {
+	/*background:#feffe0;*/
+}
+.zebra td {
+	border-right:1px dashed #d6ddcd;
+}

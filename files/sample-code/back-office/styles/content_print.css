@@ -1,0 +1,67 @@
+/*This stylesheet is reserved for printing of content only.*/
+
+/********************************************************************/
+/*Browser quirks overrides*/
+	a img {border:none 0px;}/*Remove border on linked images*/
+	form {padding:0; margin:0;} /*Removes 'padding' added by <form> element*/
+	a {text-decoration:underline;}/*Opera fix*/
+	table {font-size:1em;}/*inheritance "bug" in all browsers*/
+/********************************************************************/
+
+/********************************************************************/
+/*Base Content Size, Structure & Positions*/
+body {
+	font-size:10pt;
+}
+#Content h1 {
+	text-align:center;
+	border:none;
+}
+/********************************************************************/
+
+/********************************************************************/
+/*Content Color & Images*/
+#Content {color:#000000;}
+#Content a {
+		text-decoration:underline;
+}
+#Content h1 {
+	color:#4d760c;
+	background-color:Transparent;
+	border-bottom-color:#2f2400;
+}
+#Content h2 {
+	color:#2f2400;
+	border-bottom-color:#4d760c;
+}
+#Content h3 {color:#4d760c;}
+#Content h4 {color:#333333;}
+
+/******************************/
+#Content fieldset {border-color:#CEC39C;}
+#Content legend {
+	color:#292400;
+	background-color:Transparent;
+}
+/******************************/
+
+div.FauxHR {border-bottom:solid 3px #4d760c;}
+
+/******************************/
+#Content .Tabs ul li a {
+	border:none;
+	background-color:Transparent;
+	color:#2F2400;
+}
+#Content .Tabs ul li a.selected {
+	border:solid 1px #2f2400;
+	color:#2f2400;
+	background-color:Transparent;
+}
+
+.TabSet .Content {
+	background-color:Transparent;
+	border-color:#2f2400;
+}
+/******************************/
+/********************************************************************/

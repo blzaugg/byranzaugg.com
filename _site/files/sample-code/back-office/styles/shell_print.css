@@ -1,0 +1,32 @@
+/*This stylesheet is reserved for the shell only. No content styles.*/
+
+html, body {margin:0; padding:0;} /*Remove body margins*/
+#PageHeader {display:none;}
+#PageBody {}
+#SectionHeader {display:none;}
+#PageBody_ColumnLeft {display:none;}
+#PageBody_ColumnRight {}
+#JumpLinks {display:none;}
+#Content {}
+.NoPrint {display:none;}
+	
+#FooterNav {
+	clear:both;
+	margin:0.5em 0;
+	text-align:center;
+}
+#FooterNav ul,
+#FooterNav ul li {line-height:normal;}
+#FooterNav ul {padding:0; margin:0;}
+#FooterNav ul li {
+	margin:0;
+	padding:0 0.66em;
+	display:inline;
+	list-style:none;
+	border-right:solid 1px #000000;/*faux pipe*/
+}	
+#FooterNav a:hover {text-decoration:none;}
+#FooterNav li.last_li {
+	border-right:none;/*Remove last faux pipe*/
+	padding-right:0;/*Remove last padding*/
+}

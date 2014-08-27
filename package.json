@@ -12,7 +12,6 @@
     "grunt-shell": "~0.6.4",
     "grunt-grunticon": "~1.0.0",
     "grunt-contrib-handlebars": "~0.7.0",
-    "grunt-autoprefixer": "~0.8.2",
-    "grunt-svgstore": "~0.3.0"
+    "grunt-autoprefixer": "~0.8.2"
   }
 }

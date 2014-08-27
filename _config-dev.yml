@@ -1,4 +1,4 @@
-name: Katie Kovalcin
+name: Byran Zaugg
 markdown: redcarpet
 baseurl: ""
 exclude: [
@@ -9,9 +9,9 @@ exclude: [
   svg,
   scss,
   .sass-cache,
-  package.json, 
-  Gruntfile.js, 
-  node_modules, 
+  package.json,
+  Gruntfile.js,
+  node_modules,
   readme.md
 ]
 

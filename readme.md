@@ -1,8 +1,14 @@
-The repo for Katie Kovalcin's personal site.
+The repo for Byran Zaugg's portfolio site.
 
-You'll need two command line thingies open.
+## Prerequisites
 
-1. Type `grunt serve` into one and it'll run the server.
-1. Type `grunt` into the second one which will do everything and kick off the watching
+You'll need to install Node, NPM, grunt-cli, Ruby, SASS, and Jekyll.
+
+## Running
+
+You'll need two terminal windows open.
+
+1. In the first run: `$ grunt serve`; which will run the server.
+1. In the second run: `$ grunt`; which will magically compile the site and watch the source for changes.
 1. Go to [localhost:4000](http://localhost:4000/)
 1. Might as well kick on the [LiveReload browser extension](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)

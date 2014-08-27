@@ -1,0 +1,759 @@
+/*This stylesheet is reserved for screen content only. No Shell styles.
+Place page specific styles relative to those pages rather than here.*/
+
+/********************************************************************/
+/*Browser quirks overrides*/
+	a img {border:none 0px;}/*Remove border on linked images*/
+	form {padding:0; margin:0;} /*Removes 'padding' added by <form> element*/
+	a {text-decoration:underline;}/*Opera fix*/
+	table {font-size:1em;}/*inheritance "bug" in all browsers*/
+/********************************************************************/
+
+/********************************************************************/
+/*Base Content Size, Structure & Positions*/
+body {
+	font-family:Arial, Sans-Serif;
+	font-size:14px;
+}
+
+/*Yeah. Don't use them.*/
+/*
+#Content b,
+#Content i,
+#Content font {
+	font-size:3em !important;
+	color:Lime !important;
+	background-color:Fuchsia !important;
+}
+*/
+#Content h1 {
+	font-family:Georgia,Palatino,"Palatino Linotype",serif;
+	margin:0.67em 0;
+	font-size:1.3em;
+	font-weight:normal;
+	text-transform:uppercase;
+	border-bottom:solid 4px;
+	padding:5px 10px 3px 35px;
+	background:url('../images/content_h1_decoration.gif') no-repeat 10px 50%;
+	letter-spacing:0.1em;
+}
+#Content h2 {
+	font-family:Georgia,Palatino,"Palatino Linotype",serif;
+	margin:0.75em 0;
+	font-size:1.3em;
+	border-bottom:solid 3px;
+	line-height:1em;
+	padding-left:0.15em;
+	font-weight:normal;
+}
+#Content h3 {
+	font-family:Georgia,Palatino,"Palatino Linotype",serif;
+	margin:0.83em 0;
+	font-size:1.17em;
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:0.1em;
+}
+#Content h4, 
+#Content p,
+#Content ul,
+#Content ol,
+#Content fieldset {
+	margin:1.12em 0;
+	line-height:1.33em;/*Browser Default 1.15em*/
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+#Content ol,
+#Content ul,
+#Content .Subdivision {
+	padding-left:0;
+	margin-left:2.66em;
+}
+#Content ol ul, 
+#Content ul ol,
+#Content ul ul, 
+#Content ol ol {margin-top:0; margin-bottom:0}
+#Content li {margin:0.6em 0;}
+#Content h5 {
+	margin:1.5em 0;
+	font-size:0.83em;
+}
+#Content h6 {
+	margin: 1.67em 0;
+	font-size: .75em;
+}
+
+/******************************/
+#Content fieldset {
+	margin-top:0.6em;
+	padding:0.5em 0.66em 0.66em;
+	border-style:solid;
+	border-width:1px;
+}
+
+#Content legend {
+	margin:0; /*Vertical margins only work in Firefox & IE.*/
+	padding:0.33em 0.5em;
+	line-height:1em;
+	font-family:Georgia,Palatino,"Palatino Linotype",serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:0.1em;
+}
+/******************************/
+
+/******************************/
+#Content label {font-weight:bold;}
+#Content label.Alternate {font-weight:normal;}
+#Content label[for] {cursor:pointer;}
+/******************************/
+
+/******************************/
+div.FauxHR {
+	height:2px;
+	margin:1.5em 0;
+}
+div.FauxHR HR {display:none;}
+/******************************/
+
+/******************************/
+.Form_InputGroup {
+	padding-right:1em;
+	padding-bottom:0.5em;
+	/*border:solid 1px red;*/
+	line-height:1.2em;
+}
+
+th.Form_InputGroup {
+	text-align:right;
+}
+/******************************/
+
+/******************************/
+#Content p.RequiredFieldsKey {
+	text-align:right;
+	margin:0 1em -1em;
+}
+
+#Content p.RequiredFieldsKey span {
+	font-size:0.8em;
+	font-style: italic;
+}
+/******************************/
+
+.Note {font-style:italic; font-weight:normal;}
+
+/******************************/
+.UserAlertMessage_Info,
+.UserAlertMessage_Warning,
+.UserAlertMessage_Error {
+	text-align:center;
+	width:85%;
+	margin:1.5em auto;
+	border:solid 2px;
+}
+.UserAlertMessage_Info div,
+.UserAlertMessage_Warning div,
+.UserAlertMessage_Error div {
+	font-family:Georgia,Palatino,"Palatino Linotype",serif;
+	padding:0.25em;
+	font-size:18px;
+	font-weight:normal;
+	text-transform:uppercase;
+	letter-spacing:0.1em;
+}
+.UserAlertMessage_Info p,
+.UserAlertMessage_Warning p,
+.UserAlertMessage_Error p {
+	margin:0.33em !important;
+}
+/******************************/
+
+/******************************/
+.TabSet {margin:1.12em 0;/*Prevents top of tabs from overlapping above content.*/}
+
+.TabSet .Tabs {
+	font-family:Georgia,Palatino,"Palatino Linotype",serif;
+	font-size:12px;
+	font-weight:bold;
+	padding-left:0.75em;	
+	padding-right:0.75em;
+}
+#Content .TabSet .Tabs ul,
+#Content .TabSet .Tabs ul li {line-height:normal;}
+#Content .TabSet .Tabs ul {
+	padding:0; margin:0;
+	padding-bottom:2px;/*Must match .TabSet .Tabs ul li a {padding-bottom}*/
+	white-space:nowrap;
+}
+#Content .TabSet .Tabs ul li {
+	margin:0; padding:0;
+	list-style:none;
+	display:inline;
+}
+#Content .TabSet .Tabs ul li a {
+	padding-top:4px;
+	padding-right:10px;
+	padding-bottom:2px;/*Must match .TabSet .Tabs ul {padding-bottom}*/
+	padding-left:10px;
+	margin:0;
+	border:1px solid;
+	border-bottom:none;
+	text-decoration: none;
+	white-space:nowrap;
+}
+
+.TabSet .Content {
+	border:solid 1px;
+	border-top-width:4px;
+	border-bottom-width:4px;
+	position:relative;
+	padding:0.66em;
+}
+/******************************/
+
+/******************************/
+div.DataGrid table {
+	width:100%;
+	border-top:1px solid;
+	border-bottom:1px solid;
+}
+
+div.DataGrid table th,
+div.DataGrid table td {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	text-align:left;
+	padding:2px 8px;
+	font-size: 11px;
+	line-height: 15px;
+}
+div.DataGrid table td {
+	border-right:solid 1px;
+}
+div.DataGrid table th {
+	border-left:solid 1px;
+}
+
+div.DataGrid table tr.Last td,
+div.DataGrid table tr.Last th {
+	border-bottom: none;
+}
+/******************************/
+
+/******************************/
+.ContentGroup {
+	border:none 0px;
+	border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px;
+	padding:0 10px;
+	margin:1em 0;
+	overflow:hidden;
+}
+.ContentGroup.Yellow {
+	border: 1px solid;
+}
+
+#Content .ContentGroup h3 {
+	font-family:Arial, Sans-Serif;
+	margin:0.75em 0 0.5em;
+	font-size: 14px;
+	font-weight:bold;
+	text-transform:none;
+	letter-spacing:normal;
+}
+/******************************/
+
+#Content p.H2SubHeading {
+	margin-top:-0.75em;
+}
+
+/******************************/
+div.TableMargins {margin:1.12em 0;}
+
+.TabbedTable .TabbedTableTabs {
+	width:100%;
+}
+
+.TabbedTable .TabbedTableTabs td {
+	white-space:nowrap;
+}
+
+.TabbedTable .TabbedTableTabs td .bg-left{
+	
+}
+.TabbedTable .TabbedTableTabs td .bg-right{
+	padding:18px 13px 8px 13px;
+}
+
+.TabbedTable .TabbedTableTabs td b {
+	font-size:20px;
+	font-weight:bold;
+}
+
+.TabbedTable .TabbedTableTabs td.Selected {
+	font-size:11px;
+	font-weight:bold;
+}
+
+.TabbedTable .TabbedTableTabs td.Selected .bg-left {
+	padding:0;
+}
+.TabbedTable .TabbedTableTabs td.Selected .bg-right {
+	/*padding:0;*/
+	/*height:100%;*/
+	padding:15px 16px 8px 16px;
+	/*padding:0 16px 0 16px;*/
+}
+
+.TabbedTable .TabbedTableTabs td.Selected b {
+	font-size: 29px;
+	font-weight:bold;
+	line-height:1em;
+}
+
+.TabbedTable .TabbedTableTabs td.Selected b em,
+.TabbedTable .TabbedTableTabs td.Selected b i {
+	font-size: 20px;
+	font-weight:normal;
+}
+
+.TabbedTable .Data {
+	width:100%;
+}
+
+.Data th {
+	white-space:nowrap;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	font-size: 12px;
+	padding: 9px 14px 8px 4px;
+}
+.Data th.First {
+	border-left: 1px solid;
+	-moz-border-radius-topleft:6px;border-radius-topleft:6px;-webkit-border-top-left-radius:6px;
+}
+.Data th.Last {
+	border-right: 1px solid;
+	-moz-border-radius-topright:6px;border-radius-topright:6px;-webkit-border-top-right-radius:6px;
+}
+
+.Data td {
+	font-size:11px;
+	line-height: 15px;
+	padding: 4px 6px;
+	border-top:1px solid;
+	/*border-right:1px dashed;*/
+}
+
+#Content .Data td a {
+	color: #4D760C;
+	text-decoration:underline;
+}
+#Content .Data td a:hover {
+	color: #4D760C;
+	text-decoration:none;
+}
+
+.TabbedTable .Data .TabbedHeaders th {
+	font-size: 12px;
+	padding: 8px 6px 10px;
+	border:none 0px;/*Overide*/
+	-moz-border-radius:0;border-radius:0;-webkit-border-radius:0;/*Overide*/
+}
+
+.TabbedTable .Data .SubTableColumn {
+	padding:0;
+	border-left:none 0px;
+}
+.TabbedTable .Data .SubTableColumn + .SubTableColumn {
+	border-left:solid 4px;
+}
+
+.Data th.First,
+.Data td.First,
+.TabbedTable .Data .TabbedHeaders th.First {
+	padding-left: 11px;
+}
+.Data th.Last,
+.Data td.Last,
+.TabbedTable .Data .TabbedHeaders th.Last {
+	padding-right: 11px;
+}
+
+img.sortIcon {
+	vertical-align: middle;
+	padding-left: 6px;
+}
+/******************************/
+
+/******************************/
+.ConsecutivePayVolume table {
+	/*width:100%;*/
+}
+
+.ConsecutivePayVolume th,
+.ConsecutivePayVolume td {
+	border-left:none 0px;
+}
+.ConsecutivePayVolume th + th,
+.ConsecutivePayVolume td + td {
+	border-left:solid 1px;
+}
+
+.ConsecutivePayVolume th {
+	padding:10px;
+	padding-bottom:0;
+	white-space:nowrap;
+	text-align:center;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+#Content .ConsecutivePayVolume h3 {
+	margin:0 0 0.25em;
+	font-family:Arial, Sans-Serif;
+	font-size: 16px;
+	font-weight:bold;
+	text-transform:none;
+	letter-spacing:normal;
+}
+
+.ConsecutivePayVolume .Date {
+	font-size: 12px;
+	line-height: 11px;
+}
+
+.ConsecutivePayVolume .Cycle {
+	font-size: 11px;
+	line-height: 12px;
+	/*font-style:italic;*/
+	font-weight:normal;
+}
+
+.ConsecutivePayVolume td {
+	text-align:center;
+	font-size: 22px;
+	font-weight: bold;
+	line-height:1em;
+	padding:10px;
+	/*padding-bottom:0;*/
+}
+
+.ConsecutivePayVolume td.First {
+	font-size: 24px;
+	padding:4px;
+}
+
+.ConsecutivePayVolume td span {
+	border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px;
+	padding: 8px 10px;
+	line-height:2em;
+}
+/******************************/
+/********************************************************************/
+
+/********************************************************************/
+/*Content Color & Images*/
+#Content {color:#333333;}
+#Content a {
+		/*color:#4d760c;*/
+		text-decoration:underline;
+		/*font-weight:bold;*/
+}
+#Content a:hover {
+		/*color:#c32b0a;*/
+		text-decoration:none;
+}
+#Content h1 {
+	color:#fbefdb;
+	background-color:#4d760c;
+	border-bottom-color:#2f2400;
+}
+#Content h2 {
+	color:#2f2400;
+	border-bottom-color:#4d760c;
+}
+#Content h3 {color:#4d760c;}
+#Content h4 {color:#333333;}
+
+/******************************/
+#Content fieldset {border-color:#CEC39C;}
+#Content legend {
+	color:#FBEFDB;
+	background-color:#292400;
+}
+#Content fieldset.Alternate legend {
+	color:#2F2400;
+	background-color:Transparent;
+}
+/******************************/
+
+/******************************/
+#Content label {color:#4d760c;}
+#Content label.Alternate {color:inherit;}
+#Content label.Required {
+	background: url('../images/content_formfield_required_star_sm.png') no-repeat right top;
+	padding-right: 8px;
+}
+
+#Content p.RequiredFieldsKey span {
+	background: url('../images/content_formfield_required_star_sm.png') no-repeat right 50%;
+	padding-right: 8px;
+}
+/******************************/
+
+div.FauxHR {background-color:#cccccc;}
+
+/******************************/
+.UserAlertMessage_Info {
+	background-color:#ffffd7;
+	border-color:#4d760c;
+	color:#333333;
+}
+.UserAlertMessage_Warning {
+	background-color:#ffffd7;
+	border-color:#bc750f;
+	color:#333333;
+}
+.UserAlertMessage_Error {
+	background-color:#ffffd7;
+	border-color:#c32b0a;
+	color:#333333;
+}
+
+.UserAlertMessage_Info div {
+	color:#ffffff;
+	background-color:#4d760c;
+}
+.UserAlertMessage_Warning div {
+	color:#ffffff;
+	background-color:#bc750f;
+}
+.UserAlertMessage_Error div {
+	color:#ffffff;
+	background-color:#c32b0a;
+}
+/******************************/
+
+/******************************/
+#Content .TabSet .Tabs ul li a {
+	border-color:#2f2400;
+	background-color:#F0EDE1;
+	color:#2F2400;
+}
+#Content .TabSet .Tabs ul li a:hover {color:#c32b0a;}
+#Content .TabSet .Tabs ul li a.selected,
+#Content .TabSet .Tabs ul li a.selected:hover {
+	border-color:#2f2400;
+	color:#fbefdb;
+	background-color:#2f2400;
+}
+
+.TabSet .Content {
+	background-color:#ffffff;
+	border-color:#2f2400;
+}
+/******************************/
+.Absolute a.Help_Video {position:absolute;}
+.Left a.Help_Video {float:left;}
+.Right a.Help_Video {float:right;}
+
+#Content a.Help_Video {
+	display:block;
+	margin:0 10px 10px 10px;
+	padding:5px 8px 5px 45px;
+	font-family:Georgia, Serif;
+	font-weight:bold;
+	font-size:12px;
+	line-height:1.3em;
+	color:#fbefdb;
+	text-decoration:none;
+	background:#bc750f url('/help/video/icon.gif') no-repeat 8px 50%;
+	border:solid 1px #9b5f0a;
+}
+#Content a.Help_Video:hover {background-color:#9c610c;}
+
+/******************************/
+div.DataGrid table {
+	background:#e4e4e4;
+	border-top-color:#D7D6D6;
+	border-bottom-color:#D7D6D6;
+}
+
+div.DataGrid table th,
+div.DataGrid table td {
+	border-top-color:#EBEBEB;
+	border-bottom-color:#d9d9d9;
+}
+div.DataGrid table td {
+	border-right-color:#d9d9d9;
+}
+div.DataGrid table th {
+	border-left-color:#EBEBEB;
+}
+/******************************/
+
+/******************************/
+.ContentGroup {
+	background:#f4f4f4;
+}
+.ContentGroup.Yellow {
+	background:#FEFFE0;
+	border-color:#EBEBC7;
+}
+
+#Content .ContentGroup h3 {
+	color:#4D760C;
+}
+/******************************/
+
+#Content p.H2SubHeading {
+	color:#7F7F7F;
+}
+
+/******************************/
+.TabbedTable .TabbedTableTabs td {
+	color: #4C4C4C;
+}
+
+.TabbedTable .TabbedTableTabs td {
+	background:url('../images/table-tab-off.gif') no-repeat right bottom;
+	height:65px;
+}
+.TabbedTable .TabbedTableTabs td.First{
+	background:url('../images/table-tab-off-left.gif') no-repeat left bottom;
+}
+.TabbedTable .TabbedTableTabs td.Last{
+	background:url('../images/table-tab-off-right.gif') no-repeat right bottom;
+}
+.TabbedTable .TabbedTableTabs td.Cap{
+	background:url('../images/table-tab-header-cap.gif') no-repeat right bottom;
+	width:100%;
+}
+
+.TabbedTable .TabbedTableTabs td b {
+	color: #C0C0C1;
+}
+
+.TabbedTable .TabbedTableTabs td a {
+	color: #4D760C;
+	text-decoration:underline;
+}
+.TabbedTable .TabbedTableTabs td a {
+	color: #4D760C;
+	text-decoration:none;
+}
+
+.TabbedTable .TabbedTableTabs td.Selected {
+	background:none;
+	color: #252525;
+}
+
+.TabbedTable .TabbedTableTabs td.Selected .bg-left {
+	background:url('../images/table-tab-left.gif') no-repeat left top;
+}
+.TabbedTable .TabbedTableTabs td.Selected .bg-right {
+	background:url('../images/table-tab-right.gif') no-repeat right top;
+}
+
+.TabbedTable .TabbedTableTabs td.Selected b {
+	color: #86a655;
+}
+
+.TabbedTable .TabbedTableTabs td.Selected b em,
+.TabbedTable .TabbedTableTabs td.Selected b i {
+	color: #959595;
+}
+
+.Data th {
+	background:#e7f3d5 url(images/dash_sending_for.gif) repeat-x left bottom;
+	border-top-color:#ceddb6;
+	border-bottom-color:#ceddb6;
+	/*color: #7b9d46;*/
+	text-shadow: white 1px 1px 0px;
+}
+.Data th.First {
+	border-left-color:#ddecc6;
+}
+.Data th.Last {
+	border-right-color:#ddecc6;
+}
+.Data th,
+#Content .Data th a,
+#Content .Data th a:hover {
+	color: #676e5c;
+	text-decoration: none;
+}
+
+.Data td {
+	color: #4C4C4C;
+	border-top-color:#e9e9e9;
+	/*border-right-color:#d6ddcd;*/
+}
+
+.TabbedTable .Data .TabbedHeaders th {
+	background:#ffffff url('../images/table-tab-header.gif') repeat-x left bottom;
+}
+.TabbedTable .Data .TabbedHeaders th.First {
+	background:#ffffff url('../images/table-tab-header-left.gif') no-repeat left bottom;
+}
+.TabbedTable .Data .TabbedHeaders th.Last {
+	background:#ffffff url('../images/table-tab-header-right.gif') no-repeat right bottom;
+}
+.TabbedTable .Data .TabbedHeaders th,
+#Content .TabbedTable .Data .TabbedHeaders th a,
+#Content .TabbedTable .Data .TabbedHeaders th a:hover {
+	color: #636B75;
+	text-decoration:none;
+}
+
+.TabbedTable .Data .SubTableColumn + .SubTableColumn {
+	border-left-color:#d4d4d4;
+}
+
+.TabbedTable .Data th {
+	-moz-border-radius:0;border-radius:0;-webkit-border-radius:0;/*Overide*/
+	border-top:0 none;/*Overide*/
+}
+
+.Data tr:hover{background-color:#feffe0}
+.Data tr.NoHover:hover{background-color:Transparent;}
+
+.Data td.ColumnHighlight {
+	background-color:#f5f5f5;
+}
+.Data tr:hover td.ColumnHighlight {
+	background-color:#f0f0f0;
+}
+/******************************/
+
+/******************************/
+.ConsecutivePayVolume th + th,
+.ConsecutivePayVolume td + td {
+	border-left-color:#EBEBC7;
+}
+
+#Content .ConsecutivePayVolume h3 {
+	color:#4D760C;
+}
+
+.ConsecutivePayVolume .Date {
+	color: #4A4A47;
+}
+
+.ConsecutivePayVolume .Cycle {
+	color: #808073;
+}
+
+.ConsecutivePayVolume td span {
+	background: #D3D4C0;
+	color: #94948E;
+}
+.ConsecutivePayVolume td.First span {
+	background-color:#86A655;
+	color:#ffffff;
+}
+/******************************/
+/********************************************************************/
+

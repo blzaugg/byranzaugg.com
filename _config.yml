@@ -1,6 +1,6 @@
-name: Katie Kovalcin
+name: Byran Zaugg
 markdown: redcarpet
-baseurl: "http://katiekovalcin.github.io/kovalcin"
+baseurl: "http://blzaugg.github.io/kovalcin"
 exclude: [
   .git,
   .gitignore,
@@ -9,9 +9,9 @@ exclude: [
   svg,
   scss,
   .sass-cache,
-  package.json, 
-  Gruntfile.js, 
-  node_modules, 
+  package.json,
+  Gruntfile.js,
+  node_modules,
   readme.md
 ]
 
