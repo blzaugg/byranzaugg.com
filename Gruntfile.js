@@ -13,7 +13,8 @@ module.exports = function(grunt) {
           style: "compressed"
         },
         files: {
-          "css/global-unprefixed.css": "scss/global.scss"
+          "css/global.css": "scss/global.scss"
+          // "css/global-unprefixed.css": "scss/global.scss"
         }
       }
     },

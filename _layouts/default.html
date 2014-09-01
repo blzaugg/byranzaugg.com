@@ -1,10 +1,6 @@
 {% include doctype-and-head.html %}
 
-<!--
-	<body class="home">
--->
-
-<body class="page page-template-default custom-background background-image advanced-menu sidebar footer-widgets">
+<body class="{% if page.url == "/index.html" %}home{% endif %} page page-template-default custom-background background-image advanced-menu sidebar footer-widgets">
 	<div id="site">
 		<div id="wrapper">
 			{% include header.html %}
