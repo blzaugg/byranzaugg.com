@@ -37,7 +37,7 @@ img {
   display: none;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
 
   .advanced-menu #nav select {
 	  display: inline-block;
@@ -89,7 +89,7 @@ img {
 }/*/mediaquery: 480px */
 
 /** =STRUCTURE MIN: 768px ----- */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 840px) {
 
 	#wrapper {
 		margin: 0 auto;

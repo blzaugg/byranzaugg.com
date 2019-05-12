@@ -20,7 +20,7 @@ body {
 	padding: 0 10px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
 	body {
 		font-size: 13px;
 	}
@@ -545,13 +545,13 @@ iframe {
 	padding-top: 40px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
 	#site {
 		padding: 10px 0;
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body.background-image {
   	background: none;
   }
@@ -590,7 +590,7 @@ iframe {
 	*zoom: 1;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
 	.advanced-menu #header {
 		padding-bottom: 0;
 	}
@@ -632,7 +632,7 @@ iframe {
 	letter-spacing: -3px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
 	.sans-serif #site-name {
 		letter-spacing: -1px;
 	}
@@ -646,7 +646,7 @@ iframe {
   color: #666;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
 
 	#site-name {
 		font-size: 40px;
@@ -806,7 +806,7 @@ iframe {
 	display: block;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
   .advanced-menu #nav select {
 	  margin: 0 0 25px;
 	}
@@ -827,7 +827,7 @@ iframe {
 	border-bottom: 12px solid #000;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 840px) {
 	
 	.sidebar #content,
 	.sidebars #content {
@@ -836,7 +836,7 @@ iframe {
 	
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
 	
 	#primary,
 	#secondary {
@@ -854,7 +854,7 @@ iframe {
 	
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
 	
 	.background-image #content {
 		margin-right: 0;
@@ -1124,7 +1124,7 @@ nav li {
 	opacity: .8;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
 
 	#searchform {
 		width: 80%;
@@ -1278,7 +1278,7 @@ article .content { *zoom: 1; }
 	font-family: Arial, sans-serif;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
 	
 	.type-post {
 		margin-bottom: 20px;
@@ -1322,7 +1322,7 @@ article .content { *zoom: 1; }
 	display: inline-block;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
 
 	.sticky h1 {
 		font-size: 36px;
@@ -1604,7 +1604,7 @@ article .content { *zoom: 1; }
   padding: 0;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
 	
 	.sidebars #secondary .widget:first-child {
 		padding-top: 20px;
@@ -1612,7 +1612,7 @@ article .content { *zoom: 1; }
 	
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
 	
 	.sidebar #primary .widget:first-child,
 	.sidebars #primary .widget:first-child {
